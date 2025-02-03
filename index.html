@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!--Container General de toda la web-->
+  <div class="container">
+
+    <div>
+      <!--Aqui diseñe el header-->
+      <nav class="col navbar bg-body-tertiary">
+        <!--Aqui el logo y el texto de instagram-->
+        <div>
+          <a class="navbar-brand d-flex justify-content-center p-3" href="#">
+            <div class="textInstagram"><i class="fa-brands fa-instagram"></i> <b>Instagram</b></div>
+          </a>
+        </div>
+        <!--Aqui los dos botones de la derecha en el header-->
+        <div class="buttons">
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">Create a new post</button>
+          <!--Primer boton-->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Caption</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Segundo Boton-->
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="icons fa-solid fa-gear"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+    <!--boton de pagina de cuadricula-->
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+          role="tab" aria-controls="home-tab-pane" aria-selected="true">
+          <i class=" icons fa-solid fa-table-cells"></i></button>
+      </li>
+      <!--boton de publicaciones en columnas-->
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+          role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+          <i class="icons fa-solid fa-house"></i></button>
+      </li>
+    </ul>
+    <!--Pagina uno del grid de varias publicaciones-->
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+        <div class="row g-2 justify-content-center p-3">
+
+          <!--Diseñadas de forma responsiva, para que en pantallas pequeñas ocupen 12 columnas, medianas 6 y grandes 4-->
+          <div class="col-12 col-md-6 col-lg-4 ">
+            <img src="https://fastly.picsum.photos/id/410/200/200.jpg?hmac=hVMLZXpDnTKOed7U0eNRwQvhs6LRl-g0XjEFRs4V3cU"
+              class="img-fluid img-full" alt="...">
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="https://fastly.picsum.photos/id/126/200/200.jpg?hmac=K-6__ZO7BY87ACqo_8JSL1t0d0eQU7g2lmJIZX_cmYY"
+              class="img-fluid img-full" alt="...">
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="https://fastly.picsum.photos/id/874/200/200.jpg?hmac=mRU152zixoFMGIUREkgG83bUK2b5pIF0fhfIEnZKp6M"
+              class="img-fluid img-full" alt="...">
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="https://fastly.picsum.photos/id/322/200/200.jpg?hmac=h5_-NQtnn86YBEwVT2_4zcSeuxpCnMAdriBcZchtfas"
+              class="img-fluid img-full" alt="...">
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="https://fastly.picsum.photos/id/248/200/200.jpg?hmac=36BllTJxy_tU762d2RYKfYaSQ3-RmP74hVxabGP_u3o"
+              class="img-fluid img-full" alt="...">
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="https://fastly.picsum.photos/id/274/200/200.jpg?hmac=VyAAGiz9gpzTWWiY_4gc4fekD4gYiGiDHvS2XePRv8I"
+              class="img-fluid img-full" alt="...">
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="https://fastly.picsum.photos/id/28/200/200.jpg?hmac=eT-kjSvX_wh2uU3SYgAuRWjzo4ndNGimCCiNEaWlnOg"
+              class="img-fluid img-full" alt="...">
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="https://fastly.picsum.photos/id/35/200/200.jpg?hmac=z-UuflRhQoAvC6fqr2wnIlQzwtzUxTNE6a0vimQirvA"
+              class="img-fluid img-full" alt="...">
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <img src="https://fastly.picsum.photos/id/488/200/200.jpg?hmac=V8mvdG1ON09kNw80-qS00BSFq5gGhqRYoYPJftrsYA8"
+              class="img-fluid img-full" alt="...">
+          </div>
+        </div>
+      </div>
+      <!--pagina dos de publicaciones en columnas-->
+      <div class="tab-pane fade d-flex justify-content-center p-5" id="profile-tab-pane" role="tabpanel"
+        aria-labelledby="profile-tab" tabindex="0">
+
+        <div class="d-flex flex-column gap-3">
+          <!--Tarjeta 1-->
+          <div class="card">
+            <div class="card-header d-flex justify-content-between">
+              <b>Good Views</b>
+              <span>01/03</span>
+            </div>
+            <img src="https://fastly.picsum.photos/id/410/200/200.jpg?hmac=hVMLZXpDnTKOed7U0eNRwQvhs6LRl-g0XjEFRs4V3cU"
+              class="card-img-top img-full" alt="">
+            <div class="card-body">
+              <p class="fw-bold">150 Likes</p>
+              <p>This is an example of a very good photo that you can post on Instagram</p>
+            </div>
+          </div>
+          <!--Tarjeta 2-->
+          <div class="card">
+            <div class="card-header d-flex justify-content-between">
+              <b>water</b>
+              <span>02/03</span>
+            </div>
+            <img src="https://fastly.picsum.photos/id/126/200/200.jpg?hmac=K-6__ZO7BY87ACqo_8JSL1t0d0eQU7g2lmJIZX_cmYY"
+              class="card-img-top img-full" alt="">
+            <div class="card-body">
+              <p class="fw-bold">208 Likes</p>
+              <p>This is an example of a very good photo that you can post on Instagram</p>
+            </div>
+          </div>
+          <!--Tarjeta 3-->
+          <div class="card">
+            <div class="card-header d-flex justify-content-between">
+              <b>Inspiration</b>
+              <span>03/03</span>
+            </div>
+            <img src="https://fastly.picsum.photos/id/874/200/200.jpg?hmac=mRU152zixoFMGIUREkgG83bUK2b5pIF0fhfIEnZKp6M"
+              class="card-img-top img-full" alt="">
+            <div class="card-body">
+              <p class="fw-bold">510 Likes</p>
+              <p>This is an example of a very good photo that you can post on Instagram</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script defer src="https://kit.fontawesome.com/187dbcef35.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
